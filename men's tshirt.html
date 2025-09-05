@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Men's Tshirts</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Tahoma, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+    }
+.footer-container{
+			display: flex;
+			padding: 10px;
+			padding-left: 50px;
+			
+		}
+		.legal{
+			
+			list-style: none;
+			
+		}
+		.credits{
+			list-style: none;
+		}
+    nav{
+			background-color: antiquewhite;
+		}
+	
+		nav ul {
+			list-style: none;
+			display: flex;
+		}
+		nav ul li{
+			position: relative;
+		}
+		nav ul li a {
+      display: block;
+      color: #000000;
+      padding: 12px 16px;
+      text-decoration: none;
+			font-size: 20px;
+    }
+
+    nav ul li:hover {
+      background-color: #FCF5EC;
+    }
+
+    nav ul li ul {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #FCF5EC;
+    }
+
+    nav ul li:hover ul {
+      display: block;
+    }
+
+    nav ul li ul li a {
+      padding: 10px;
+    }
+
+
+    /* Cart Button */
+    #cart-link {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background: #2563eb;
+      color: #fff;
+      padding: 10px 16px;
+      border-radius: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* Heading */
+    h1 {
+      text-align: center;
+      margin: 30px 0;
+      color: #222;
+    }
+
+    /* Gallery */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 25px;
+      padding: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .image {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+
+    .image:hover {
+      transform: translateY(-5px);
+    }
+
+    .image img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .details {
+      padding: 15px;
+    }
+
+    .details h3 {
+      margin: 0 0 8px;
+      font-size: 1.1rem;
+      color: #333;
+    }
+
+    .details p {
+      margin: 4px 0;
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    .price {
+      font-weight: bold;
+      font-size: 1rem;
+      color: #222;
+      margin: 8px 0;
+    }
+
+    .details button {
+      background: #2563eb;
+      color: #fff;
+      border: none;
+      padding: 10px 14px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: background 0.3s;
+    }
+
+    .details button:hover {
+      background: #1d4ed8;
+    }
+  </style>
+</head>
+<body>
+
+ <nav>
+		<ul>
+			<li><a href="home.html">Home</a> </li>
+			
+			<li><a>Tshirt</a>
+			<ul>
+				<li><a href="men's tshirt.html">Men</a></li>
+				<li><a href="Women's tshirt.html">Women</a></li>
+				<li><a href="kids tshirt.html">Kids</a></li>
+			  </ul>
+			</li>
+			
+		  <li><a>Shoes</a>
+			<ul>
+				<li><a href="men shoe.html">Men</a></li>
+				<li><a href="women shoe.html">Women</a></li>
+				<li><a href="kid shoe.html">Kids</a></li>
+				</ul>
+			</li>
+			
+			<li><a href="equipments.html">Equipments</a></li>
+	
+		<li><a href="contact.html">Contact</a></li>
+			</ul>
+		
+	</nav>
+
+  <!-- Floating Cart Button -->
+  <a id="cart-link" href="cart.html">🛒 Cart</a>
+
+  <!-- Page Heading -->
+  <h1>Men's Tshirts</h1>
+
+  <!-- Gallery -->
+  <div class="gallery">
+
+    <!-- Product 1 -->
+    <div class="image">
+      <img src="images/Gemini_Generated_Image_4jw1gj4jw1gj4jw1.png" alt="Tshirt 1">
+      <div class="details">
+        <h3>Men's Tshirt 1</h3>
+        <p>Colours: Black, White, Blue</p>
+        <p>Size: S, M, L, XL, XXL</p>
+        <p class="price">₹499</p>
+        <button onclick="addToCart('Men\'s Tshirt 1', 499, 'images/tshirt1.png')">
+          Add to Cart
+        </button>
+      </div>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="image">
+      <img src="images/Gemini_Generated_Image_ce46ynce46ynce46 (2).jpg" alt="Tshirt 2">
+      <div class="details">
+        <h3>Men's Tshirt 2</h3>
+        <p>Colours: Black, White, Blue</p>
+        <p>Size: S, M, L, XL, XXL</p>
+        <p class="price">₹599</p>
+        <button onclick="addToCart('Men\'s Tshirt 2', 599, 'images/tshirt2.png')">
+          Add to Cart
+        </button>
+      </div>
+    </div>
+
+	  <div class="image">
+      <img src="images/Gemini_Generated_Image_ftnc9gftnc9gftnc.jpg"alt="Tshirt 1">
+      <div class="details">
+        <h3>Men's Tshirt 1</h3>
+        <p>Colours: Black, White, Blue</p>
+        <p>Size: S, M, L, XL, XXL</p>
+        <p class="price">₹499</p>
+        <button onclick="addToCart('Men\'s Tshirt 1', 499, 'images/tshirt1.png')">
+          Add to Cart
+        </button>
+      </div>
+    </div>
+	  
+	  <div class="image">
+      <img src="images/Gemini_Generated_Image_hodznzhodznzhodz.png" alt="Tshirt 1">
+      <div class="details">
+        <h3>Men's Tshirt 1</h3>
+        <p>Colours: Black, White, Blue</p>
+        <p>Size: S, M, L, XL, XXL</p>
+        <p class="price">₹299</p>
+        <button onclick="addToCart('Men\'s Tshirt 1', 499, 'images/tshirt1.png')">
+          Add to Cart
+        </button>
+      </div>
+    </div>
+	  
+	  <div class="image">
+      <img src="images/Gemini_Generated_Image_owu40bowu40bowu4.jpg" alt="Tshirt 1">
+      <div class="details">
+        <h3>Men's Tshirt 1</h3>
+        <p>Colours: Black, White, Blue</p>
+        <p>Size: S, M, L, XL, XXL</p>
+        <p class="price">₹699</p>
+        <button onclick="addToCart('Men\'s Tshirt 1', 499, 'images/tshirt1.png')">
+          Add to Cart
+        </button>
+      </div>
+    </div>
+	  
+	  <div class="image">
+      <img src="images/Gemini_Generated_Image_pw1hh1pw1hh1pw1h.jpg" alt="Tshirt 1">
+      <div class="details">
+        <h3>Men's Tshirt 1</h3>
+        <p>Colours: Black, White, Blue</p>
+        <p>Size: S, M, L, XL, XXL</p>
+        <p class="price">₹499</p>
+        <button onclick="addToCart('Men\'s Tshirt 1', 499, 'images/tshirt1.png')">
+          Add to Cart
+        </button>
+      </div>
+    </div>
+	  
+	  <div class="image">
+      <img src="images/l.png"alt="Tshirt 1">
+      <div class="details">
+        <h3>Men's Tshirt 1</h3>
+        <p>Colours: Black, White, Blue</p>
+        <p>Size: S, M, L, XL, XXL</p>
+        <p class="price">₹499</p>
+        <button onclick="addToCart('Men\'s Tshirt 1', 499, 'images/tshirt1.png')">
+          Add to Cart
+        </button>
+      </div>
+    </div>
+	  
+	  <div class="image">
+      <img src="images/s.png" alt="Tshirt 1">
+      <div class="details">
+        <h3>Men's Tshirt 1</h3>
+        <p>Colours: Black, White, Blue</p>
+        <p>Size: S, M, L, XL, XXL</p>
+        <p class="price">₹499</p>
+        <button onclick="addToCart('Men\'s Tshirt 1', 499, 'images/tshirt1.png')">
+          Add to Cart
+        </button>
+      </div>
+    </div>
+	  
+	<footer>  <div class="footer-container">
+   <div style="margin-bottom: 20px;">
+    <p><strong>Contact Us:</strong></p>
+    <p>Email: contact@coresport.com</p>
+    <p>Phone: +91 10088 80026</p>
+    <p>Address: 123 Business Rd, Gwalior, India</p>
+  </div>
+		  <div style="margin-bottom: 20px;">
+    <p><strong>Follow us:</strong></p>
+    <a href="https://facebook.com/" target="_blank">Facebook</a> |
+    <a href="https://twitter.com/" target="_blank">Twitter</a> |
+    <a href="https://instagram.com/" target="_blank">Instagram</a> |
+    <a href="https://linkedin.com/" target="_blank">LinkedIn</a>
+			</div>  
+<ul class="legal">
+      <li><a>Privacy Policy</a></li>
+      <li><a>Terms of Service</a></li>
+      <li><a>Cookie Policy</a></li>
+      <li><a>Accessibility Statement</a></li>
+    </ul>
+    <p class="copyright">
+      &copy; 2025 Your Company Name. All rights reserved.
+    </p>
+		  <ul class="credits">
+		  <li><a>Designed By:</a></li>
+		  <li><a>Diya Agrawal</a></li>
+		  <li><a>Aadya Agrawal</a></li>
+		  </ul>
+
+  </div></footer>
+		
+  </div>
+
+  <!-- JS for Cart -->
+  <script>
+    function addToCart(name, price, imgSrc) {
+      let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+      let existing = cart.find(item => item.name === name);
+      if (existing) {
+        existing.quantity += 1;
+      } else {
+        cart.push({ name, price, imgSrc, quantity: 1 });
+      }
+
+      localStorage.setItem("cart", JSON.stringify(cart));
+      alert(name + " added to cart!");
+    }
+  </script>
+
+</body>
+</html>

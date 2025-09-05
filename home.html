@@ -1,0 +1,287 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CoreSport</title>
+	
+	<style>
+		nav{
+			background-color: antiquewhite;
+		}
+		#banner_img{
+			width: 99%;
+			height: 60%;
+			padding: 20px;
+		}
+		nav ul {
+			list-style: none;
+			display: flex;
+		}
+		nav ul li{
+			position: relative;
+		}
+		nav ul li a {
+      display: block;
+      color: #000000;
+      padding: 12px 16px;
+      text-decoration: none;
+			font-size: 20px;
+    }
+
+    nav ul li:hover {
+      background-color: #FCF5EC;
+    }
+
+    nav ul li ul {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #FCF5EC;
+    }
+
+    nav ul li:hover ul {
+      display: block;
+    }
+
+    nav ul li ul li a {
+      padding: 10px;
+    }
+		.card-container {
+  display: flex;
+  justify-content: center; 
+  gap: 50px;            
+  padding: 20px;
+}
+
+ .card {
+      width: 450px;
+      height: 450px;
+      perspective: 1000px; /* gives 3D effect */
+    }
+    .card-inner {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      transform-style: preserve-3d;
+      transition: transform 0.6s;
+    }
+    .card:hover .card-inner {
+   
+      transform: rotateY(180deg); 
+    }
+    .card-front, .card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 15px;
+      border: 1px solid black;
+      border-radius: 10px;
+    }
+    .card-front {
+      background: #D7D7D7;
+    }
+    .card-back {
+      background-color: antiquewhite;
+      transform: rotateY(180deg);
+    }
+		
+.about-us {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 60px 10%;
+  background: #f9fafb;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-text h2 {
+  font-size: 2rem;
+  margin-bottom: 16px;
+  color: #111827;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #374151;
+}
+
+.about-img img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%; 
+  object-fit: cover;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-img img {
+    width: 200px;
+    height: 200px;
+  }
+}
+		
+		#text-mar{
+			font-size: 20px;
+			
+		}
+
+		#card-text{
+			font-size: 20px;
+			text-align: center;
+		}
+		#about-text{
+			font-size: 25px;
+		}
+		.footer-container{
+			display: flex;
+			padding: 10px;
+			padding-left: 50px;
+			
+		}
+		.legal{
+			justify-content: center;
+			list-style: none;
+			padding: 10px;
+		}
+		.credits{
+			list-style: none;
+		}
+    </style>
+	
+</head>
+
+<body>
+<div class="container">
+		<header>
+			
+         <h1>CoreSport</h1>
+		</header>
+  
+		<nav>
+		<ul>
+			<li><a href="home.html">Home</a> </li>
+			
+			<li><a>Tshirt</a>
+			<ul>
+				<li><a href="men's tshirt.html">Men</a></li>
+				<li><a href="Women's tshirt.html">Women</a></li>
+				<li><a href="kids tshirt.html">Kids</a></li>
+			  </ul>
+			</li>
+			
+		  <li><a>Shoes</a>
+			<ul>
+				<li><a href="men shoe.html">Men</a></li>
+				<li><a href="women shoe.html">Women</a></li>
+				<li><a href="kid shoe.html">Kids</a></li>
+				</ul>
+			</li>
+			
+			<li><a href="equipments.html">Equipments</a></li>
+			<li><a href="contact.html">Contact</a></li>
+			</ul>
+		
+	</nav>
+  <img id="banner_img"src="images/Screenshot 2025-08-28 155211.png"width=95% height="344" alt=""/>
+<marquee loop="infinite"scrollamount="10" id="text-mar">GAME  ON . LIMIT  OFF .  TRY CORESPORT NOW . </marquee>
+	<div class="card-container">
+ <div class="card">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="images/Gemini_Generated_Image_5opotw5opotw5opo (1).jpg" width=100% height=100% alt=""/> </div>
+      <div class="card-back">
+        <a id="card-text">It's all about the details. From the perfect pair of shoes to the finishing touches, we've got you covered. At CoreSport, we're more than just a shoe store. We provide a hand-picked selection of footwear and a range of other stylish products designed to help you make your mark, one step at a time.</a>
+      </div>
+    </div>
+  </div>
+ <div class="card">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="images/Gemini_Generated_Image_ce46ynce46ynce46 (2).jpg" width=100% height=100% alt=""/>
+      </div>
+      <div class="card-back">
+		  <a id="card-text">Your style is a statement, and the right t-shirt can say it all. It’s the starting point for a look that's comfortable, confident, and completely you. At CoreSport, we believe in the power of a great t-shirt. We provide a hand-picked selection of tees and a range of other stylish products designed to help you express your authentic self, one outfit at a time.</a>
+         </div>
+    </div>
+  </div>
+ <div class="card">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="images/Gemini_Generated_Image_ukvd21ukvd21ukvd.jpg" width=100% height=100% alt=""/> </div>
+      <div class="card-back">
+        <a id="card-text">Success isn't just about what you do; it's about what you do it with. The right equipment is the backbone of efficiency, innovation, and safety. At CoreSport, we believe in empowering you to do your best work. We provide a hand-picked selection of high-performance equipment and a range of other products designed to give you the edge you need to get the job done right.</a>
+      </div>
+    </div>
+  </div>
+	</div>
+	<!-- About Us Section -->
+<section class="about-us">
+  <div class="about-text">
+    <h2>About Us</h2>
+    <p id="about-text">
+      CoreSport is a global athletic and lifestyle brand dedicated to empowering individuals through every phase of their fitness journey. CoreSport's mission is to be the foundation for every athlete's journey, from the first step to the finish line. Founded on the principle that strength comes from within, we provide a curated collection of high-performance equipment and apparel.
+We believe in a foundation of durability and innovation, creating products built to last and designed to help you push your limits. CoreSport is more than a brand; it's a commitment to a community of athletes who are building their legacy, one workout at a time.
+Every product we design is a testament to this belief. We understand that your gear is not just a tool—it's an extension of your effort. That's why we obsess over every detail, from the material and fit to the functionality and feel. Our mission is to provide you with equipment and apparel that support your focus, so you can train without distraction and unlock your true potential.
+
+    </p>
+  </div>
+  <div class="about-img"><img src="images/Gemini_Generated_Image_i511ogi511ogi511 (1).jpg"  width="400" height="400" alt=""/>
+	  	  
+  </div>
+</section>
+
+
+	  <footer>  <div class="footer-container">
+   <div style="margin-bottom: 20px;">
+    <p><strong>Contact Us:</strong></p>
+    <p>Email: contact@coresport.com</p>
+    <p>Phone: +91 10088 80026</p>
+    <p>Address: 123 Business Rd, Gwalior, India</p>
+  </div>
+		  <div style="margin-bottom: 20px;">
+    <p><strong>Follow us:</strong></p>
+    <a href="https://facebook.com/" target="_blank">Facebook</a> |
+    <a href="https://twitter.com/" target="_blank">Twitter</a> |
+    <a href="https://instagram.com/" target="_blank">Instagram</a> |
+    <a href="https://linkedin.com/" target="_blank">LinkedIn</a>
+			</div>  
+<ul class="legal">
+      <li><a>Privacy Policy</a></li>
+      <li><a>Terms of Service</a></li>
+      <li><a>Cookie Policy</a></li>
+      <li><a>Accessibility Statement</a></li>
+    </ul>
+    <p class="copyright">
+      &copy; 2025 Your Company Name. All rights reserved.
+    </p>
+		  <ul class="credits">
+		  <li><a>Designed By:</a></li>
+		  <li><a>Diya Agrawal</a></li>
+		  <li><a>Aadya Agrawal</a></li>
+		  </ul>
+
+  </div></footer>
+		
+		  </div>
+			  
+  
+
+	
+</body>
+</html>

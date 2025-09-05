@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>My Cart</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Tahoma, sans-serif;
+      background: #f9f9f9;
+      padding: 20px;
+    }
+.footer-container{
+			display: flex;
+			padding: 10px;
+			padding-left: 50px;
+			
+		}
+		.legal{
+			justify-content: center;
+			list-style: none;
+			padding: 10px;
+		}
+		.credits{
+			list-style: none;
+		}
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #222;
+    }
+
+    .cart-container {
+      max-width: 900px;
+      margin: auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      padding: 12px;
+      text-align: center;
+      border-bottom: 1px solid #eee;
+    }
+
+    th {
+      background: #f0f0f0;
+      font-weight: 600;
+    }
+
+    td img {
+      width: 60px;
+      height: 60px;
+      border-radius: 6px;
+      object-fit: cover;
+    }
+
+    .quantity {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .quantity button {
+      padding: 4px 8px;
+      border: none;
+      background: #2563eb;
+      color: #fff;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .quantity button:hover {
+      background: #1d4ed8;
+    }
+
+    .remove-btn {
+      background: red;
+      border: none;
+      color: #fff;
+      padding: 6px 10px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .total {
+      text-align: right;
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+
+    .back-btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 15px;
+      background: #2563eb;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 6px;
+    }
+	   nav{
+			background-color: antiquewhite;
+		}
+	
+		nav ul {
+			list-style: none;
+			display: flex;
+		}
+		nav ul li{
+			position: relative;
+		}
+		nav ul li a {
+      display: block;
+      color: #000000;
+      padding: 12px 16px;
+      text-decoration: none;
+			font-size: 20px;
+    }
+
+    nav ul li:hover {
+      background-color: #FCF5EC;
+    }
+
+    nav ul li ul {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #FCF5EC;
+    }
+
+    nav ul li:hover ul {
+      display: block;
+    }
+
+    nav ul li ul li a {
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+ <nav>
+		<ul>
+			<li><a href="home.html">Home</a> </li>
+			
+			<li><a>Tshirt</a>
+			<ul>
+				<li><a href="men's tshirt.html">Men</a></li>
+				<li><a href="Women's tshirt.html">Women</a></li>
+				<li><a href="kids tshirt.html">Kids</a></li>
+			  </ul>
+			</li>
+			
+		  <li><a>Shoes</a>
+			<ul>
+				<li><a href="men shoe.html">Men</a></li>
+				<li><a href="women shoe.html">Women</a></li>
+				<li><a href="kid shoe.html">Kids</a></li>
+				</ul>
+			</li>
+			
+			<li><a href="equipments.html">Equipments</a></li>
+	
+			<li><a href="contact.html">Contact</a></li>
+			</ul>
+		
+	</nav>
+  <!-- Heading -->
+  <h1>🛒 My Cart</h1>
+
+  <div class="cart-container">
+
+    <!-- Cart Table -->
+    <table>
+      <thead>
+        <tr>
+          <th>Image</th>
+          <th>Product</th>
+          <th>Price</th>
+          <th>Quantity</th>
+          <th>Subtotal</th>
+          <th>Remove</th>
+        </tr>
+      </thead>
+      <tbody id="cart-items"></tbody>
+    </table>
+
+    <!-- Total -->
+    <div class="total" id="total">Total: ₹0</div>
+
+   <footer>  <div class="footer-container">
+   <div style="margin-bottom: 20px;">
+    <p><strong>Contact Us:</strong></p>
+    <p>Email: contact@coresport.com</p>
+    <p>Phone: +91 10088 80026</p>
+    <p>Address: 123 Business Rd, Gwalior, India</p>
+  </div>
+		  <div style="margin-bottom: 20px;">
+    <p><strong>Follow us:</strong></p>
+    <a href="https://facebook.com/" target="_blank">Facebook</a> |
+    <a href="https://twitter.com/" target="_blank">Twitter</a> |
+    <a href="https://instagram.com/" target="_blank">Instagram</a> |
+    <a href="https://linkedin.com/" target="_blank">LinkedIn</a>
+			</div>  
+<ul class="legal">
+      <li><a>Privacy Policy</a></li>
+      <li><a>Terms of Service</a></li>
+      <li><a>Cookie Policy</a></li>
+      <li><a>Accessibility Statement</a></li>
+    </ul>
+    <p class="copyright">
+      &copy; 2025 Your Company Name. All rights reserved.
+    </p>
+		  <ul class="credits">
+		  <li><a>Designed By:</a></li>
+		  <li><a>Diya Agrawal</a></li>
+		  <li><a>Aadya Agrawal</a></li>
+		  </ul>
+
+  </div></footer>
+		
+  </div>
+
+  <!-- JS -->
+  <script>
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+    const cartItems = document.getElementById("cart-items");
+    const totalDisplay = document.getElementById("total");
+
+    function renderCart() {
+      cartItems.innerHTML = "";
+      let total = 0;
+
+      if (cart.length === 0) {
+        cartItems.innerHTML = "<tr><td colspan='6'>Your cart is empty</td></tr>";
+      } else {
+        cart.forEach((item, index) => {
+          let subtotal = item.price * item.quantity;
+          total += subtotal;
+
+          cartItems.innerHTML += `
+            <tr>
+              <td><img src="${item.imgSrc}" alt="${item.name}"></td>
+              <td>${item.name}</td>
+              <td>₹${item.price}</td>
+              <td class="quantity">
+                <button onclick="updateQuantity(${index}, -1)">-</button>
+                ${item.quantity}
+                <button onclick="updateQuantity(${index}, 1)">+</button>
+              </td>
+              <td>₹${subtotal}</td>
+              <td>
+                <button class="remove-btn" onclick="removeItem(${index})">❌</button>
+              </td>
+            </tr>
+          `;
+        });
+      }
+
+      totalDisplay.textContent = "Total: ₹" + total;
+    }
+
+    function updateQuantity(index, change) {
+      cart[index].quantity += change;
+
+      if (cart[index].quantity <= 0) {
+        cart.splice(index, 1);
+      }
+
+      localStorage.setItem("cart", JSON.stringify(cart));
+      renderCart();
+    }
+
+    function removeItem(index) {
+      cart.splice(index, 1);
+      localStorage.setItem("cart", JSON.stringify(cart));
+      renderCart();
+    }
+
+    renderCart();
+  </script>
+
+</body>
+</html>
